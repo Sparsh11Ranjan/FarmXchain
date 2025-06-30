@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 # Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Prakhar%403009@127.0.0.1:3306/farmers'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Sparsh%403009@127.0.0.1:3306/farmers'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
