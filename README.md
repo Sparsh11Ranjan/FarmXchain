@@ -48,5 +48,10 @@ FarmXchain/
 register (rid PK) -- farming (fid PK)
 register (farmername) --< addagroproducts (username)
 ```
+## 👩‍💻 Author
 
+Developed with ❤️ by **Sparsh Ranjan**  
+📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/sparsh-ranjan-b57514289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
+---
 ---
