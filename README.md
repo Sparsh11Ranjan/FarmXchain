@@ -50,33 +50,25 @@ FarmXchain focuses on **backend architecture**, providing a clean and scalable s
 ---
 
 ## 🧩 Project Structure
+  ```bash
+  FarmXchain/
+  │
+  ├── app.py # Application factory (sets up Flask app, config, blueprints)
+  ├── manage.py # CLI runner for server & migrations
+  ├── models.py # SQLAlchemy models (Register, Products, Farming, Trig, User)
+  ├── schemas.py # Marshmallow schemas for validation
+  │
+  ├── routes/
+  │ ├── auth.py # User registration & JWT authentication
+  │ ├── farmers.py # CRUD routes for farmers
+  │ ├── products.py # CRUD routes for agro products
+  │ ├── farming.py # CRUD routes for farming types
+  │ ├── records.py # API for fetching activity logs
+  │
+  ├── migrations/ # Auto-generated migration files (via Flask-Migrate)
+  │
+  ├── .env.example # Environment variable template
+  ├── requirements.txt # Project dependencies
+  └── README.md # This file
+  ---
 
-FarmXchain/
-│
-├── app.py # Application factory (sets up Flask app, config, blueprints)
-├── manage.py # CLI runner for server & migrations
-├── models.py # SQLAlchemy models (Register, Products, Farming, Trig, User)
-├── schemas.py # Marshmallow schemas for validation
-│
-├── routes/
-│ ├── auth.py # User registration & JWT authentication
-│ ├── farmers.py # CRUD routes for farmers
-│ ├── products.py # CRUD routes for agro products
-│ ├── farming.py # CRUD routes for farming types
-│ ├── records.py # API for fetching activity logs
-│
-├── migrations/ # Auto-generated migration files (via Flask-Migrate)
-│
-├── .env.example # Environment variable template
-├── requirements.txt # Project dependencies
-└── README.md # This file
-
-
----
-
-## 🛠️ Installation & Setup
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/<your-username>/FarmXchain.git
-cd FarmXchain
